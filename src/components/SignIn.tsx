@@ -1,4 +1,4 @@
-import React from "react";
+
 import { auth, provider, signInWithPopup, db } from "../firebase";
 import { setDoc, doc } from "firebase/firestore";
 

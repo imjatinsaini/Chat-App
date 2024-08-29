@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import  { useState, useEffect, useRef } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import {
   collection,
@@ -18,8 +18,10 @@ interface Message {
 }
 
 const ChatRoom: React.FC = () => {
-  const { chatId } = useParams<{ chatId: string }>();
-  const { state } = useLocation<{ selectedUser: { uid: string; name: string } }>();
+  // const { chatId } = useParams<{ chatId: string }>();
+  // const { state } = useLocation<{ selectedUser: { uid: string; name: string } }>();
+   const { chatId } = useParams();
+  const { state } = useLocation();
   const [messages, setMessages] = useState<Message[]>([]);
   const [formValue, setFormValue] = useState("");
   const dummy = useRef<HTMLDivElement | null>(null);
