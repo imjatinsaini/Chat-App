@@ -113,20 +113,20 @@ const UserList: React.FC = () => {
       <table className="min-w-full bg-[#FFF9F3]">
         <thead>
           <tr>
-            <th className="text-left py-2 px-4  md:px-12">Name</th>
-            <th className="text-left py-2 px-4 md:px-12">Email</th>
-            <th className="text-left py-2 px-4 md:px-12">Action</th>
+            <th className="text-left py-2 px-4 text-xs md:text-base  md:px-12">Name</th>
+            <th className="text-left py-2 px-4 text-xs md:text-base  md:px-12">Email</th>
+            <th className="text-left py-2 px-4 text-xs md:text-base  md:px-12">Action</th>
           </tr>
         </thead>
         <tbody>
           {users.map(user => (
             <tr key={user.uid}>
-              <td className="py-4 px-4 md:px-12">{user.name}</td>
-              <td className="py-4 px-4 md:px-12">{user.email}</td>
-              <td className="py-4 px-4 md:">
+              <td className="py-4 px-4 text-xs md:text-base  md:px-12">{user.name}</td>
+              <td className="py-4 px-4 text-xs md:text-base md:px-12">{user.email}</td>
+              <td className="py-4 px-4 text-xs md:text-base   md:">
                 <button
                   onClick={() => startChat(user)}
-                  className="bg-gradient-to-r from-blue-400 to-purple-300 transform transition-all duration-300 ease-in-out  hover:from-purple-300 hover:to-blue-400  text-white p-2  md:px-12 px-auto hover:scale-110 active:scale-95 rounded-3xl shadow-xl"
+                  className="bg-gradient-to-r from-blue-400 to-purple-300 transform transition-all duration-300 ease-in-out  hover:from-purple-300 hover:to-blue-400  text-white p-2  md:px-12  hover:scale-110 active:scale-95 rounded-3xl shadow-xl"
                 >
                   Chat
                 </button>
