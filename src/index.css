@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-gray-900;
+  }
+
+  .header {
+    @apply flex justify-between items-center p-4 bg-gradient-to-r rounded-t-2xl  from-blue-300 to-purple-400 text-white;
+  }
+  
+  .messages {
+    @apply p-4 overflow-auto bg-purple-200 md:h-[73.5vh] h-[75vh];
+  }
+  
+  .form {
+    @apply p-4 border bg-white shadow-lg  flex;
+  }
+  
+  .input {
+    @apply flex-1 p-2 border border-gray-200 text-gray-600 rounded-l;
+  }
+  
+  .send-btn {
+    @apply bg-blue-400  text-white p-2 rounded-r;
+  }
+  
+  .message {
+    @apply flex items-center p-2 rounded-lg mb-2;
+  }
+  
+  .message.sent {
+    @apply justify-end;
+  }
+  
+  .message.received {
+    @apply justify-start;
+  }
+  
+  .avatar {
+    @apply w-10 h-10 rounded-full mr-2;
+  }
+  
